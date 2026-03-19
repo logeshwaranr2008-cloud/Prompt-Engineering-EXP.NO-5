@@ -12,148 +12,206 @@ Write a basic Prompt: Clear, detailed, and structured prompts that give specific
 Prepare Multiple Test Scenarios: Select various scenarios such as: Generating a creative story. Answering a factual question. Summarizing an article or concept. Providing advice or recommendations. or Any other test scenario. For each scenario, create both a naïve and a basic prompt. Ensure each pair of prompts targets the same task but with different levels of structure. Run Experiments with ChatGPT: Input the naïve prompt for each scenario and record the generated response. Then input the corresponding basic prompt and capture that response. Repeat this process for all selected scenarios to gather a full set of results. Evaluate Responses : Compare how ChatGPT performs when given naïve versus basic prompts and analyze the output based on Quality,Accuracy and Depth. Also analyse does ChatGPT consistently provide better results with basic prompts? Are there scenarios where naïve prompts work equally well? Deliverables: A table comparing ChatGPT's responses to naïve and basic prompts across all scenarios. Analysis of how prompt clarity impacts the quality, accuracy, and depth of ChatGPT’s outputs. Summary of findings with insights on how to structure prompts for optimal results when using ChatGPT.
 
 OUTPUT:
+ ### (A) Define two types of prompt
+ 
+### 1. **Open-ended Prompt**
 
-Native Prompt:
-A natve prompt is a simple, vague, or unstructured instruction given to the AI without much detail or context. It often lacks clarity and specific requirements.
+* Allows free and detailed responses.
+* Encourages creativity and explanation.
+* No fixed answer is required.
+* Example: “Explain the impact of plastic pollution on the environment.”
 
-Example:
+### 2. **Closed-ended Prompt**
 
-“Write about AI.”
+* Requires short, specific, or fixed answers.
+* Usually has a correct or limited response.
+* Used for facts or direct information.
+* Example: “Is plastic biodegradable? (Yes/No)”
 
-Basic Prompt:
+### (B) Test Scenarios 
+   We tested four scenarios: 
+1. Creative Story Generation 
+2. Answering a Factual Question 
+3. Summarizing a Concept 
+4. Providing Advice 
+For each scenario we used both a Open-ended prompt and a Closed-ended prompt.
 
-A basic prompt is clear, detailed, and structured. It provides specific instructions, context, and sometimes constraints (like word count, tone, or format) to guide the AI toward a more relevant and accurate response.
+###Scenario-1 Creative story
 
-Example:
+1.Open-ended prompt
 
-“Write a 150-word explanation of Artificial Intelligence, including its definition, key applications, and advantages in simple language.”
+“Write a creative story about a mysterious forest where anything can happen. Describe the characters, setting, and unexpected events in detail.”
 
-2. Test Scenarios and Prompts:
+Output:
+
+The forest appeared on no map, yet everyone in the nearby village knew not to speak of it after sunset. Tall trees with silver bark stood close together, their branches weaving a roof so thick that even daylight entered only in soft green whispers. It was said that the forest changed itself—paths shifting, shadows moving, and voices calling out in familiar tones.
+
+One evening, a curious girl named Anaya stepped beyond the warning stones. She was brave, with a lantern in one hand and a notebook in the other, determined to uncover the truth. As she walked deeper, the air grew cooler, and she noticed strange glowing flowers that pulsed like tiny hearts. A fox with golden eyes began to follow her silently, never too close, yet never far.
+
+2. Closed-ended Prompt 
+
+“Write a short story of exactly 5 sentences about a boy who finds a magical key and uses it to open a hidden door.”
+
+Output:
+
+A boy named Arjun found a strange, glowing key buried beneath an old tree in his backyard.
+Curious, he searched around until he discovered a hidden door behind a wall covered in vines.
+With a trembling hand, he used the key to unlock it, and the door slowly creaked open.
+Inside, he found a magical world filled with floating islands and talking creatures.
+Realizing the key had chosen him, Arjun stepped forward, ready for an unforgettable adventure.
+
+###Scenario-2 Factual Question
+
+1. Open-ended Prompt 
+
+“Explain what plastic pollution is and describe its main causes and effects on the environment.”
+
+Output:
+
+Plastic pollution is the accumulation of plastic waste in the environment, especially in land, rivers, and oceans, where it does not easily decompose. It occurs because plastics are durable and can take hundreds of years to break down.
+
+The main causes include excessive use of single-use plastics (like bags and bottles), improper waste disposal, lack of recycling, and industrial plastic production. Littering and poor waste management systems also contribute significantly.
+
+2. Closed-ended Prompt 
+
+“Is plastic biodegradable? Answer Yes or No.”
+
+Output:
+
+ No.
+
+###Scenario-3 Summarizing Concept 
+
+1. Open-ended Prompt 
+
+“Summarize the concept of plastic pollution and its impact on the environment in your own words.”
+
+Output:
+
+Plastic pollution refers to the buildup of plastic waste in the environment due to its non-biodegradable nature. It mainly results from excessive use of plastics, poor waste management, and lack of recycling. This pollution harms wildlife, contaminates water bodies, and damages ecosystems. It also affects soil quality and can release harmful chemicals into the environment. Overall, plastic pollution is a serious global issue that threatens both nature and human health.
+
+
+2. Closed-ended Prompt 
+
+“Summarize plastic pollution in exactly 3 sentences.”
+
+Output:
+
+Plastic pollution is the accumulation of non-biodegradable plastic waste in the environment. It is mainly caused by excessive use of plastics and poor waste management. It harms wildlife, pollutes ecosystems, and poses risks to human health.
+
+###Scenario-4  Advice / Recommendation
+
+1. Open-ended Prompt 
+
+“Explain how individuals can reduce plastic pollution in their daily lives.”
+
+Output:
+
+Individuals can reduce plastic pollution in their daily lives by making simple but consistent choices. They can start by avoiding single-use plastics such as bags, bottles, and straws, and instead use reusable alternatives like cloth bags and steel bottles. Proper waste disposal and separating recyclable materials help ensure plastics are processed correctly. People can also support eco-friendly products with minimal packaging and participate in recycling programs. Additionally, spreading awareness and encouraging others to adopt sustainable habits can create a larger positive impact on the environment.
+
+
+2. Closed-ended Prompt 
+
+“List exactly 3 ways to reduce plastic pollution.”
+
+Output:
+
+1. Use reusable bags, bottles, and containers instead of single-use plastics.
+2. Properly dispose of waste and separate recyclable materials.
+3. Avoid products with excessive plastic packaging.
    
-   <img width="992" height="503" alt="image" src="https://github.com/user-attachments/assets/dec3581d-2d35-4519-a5e2-e532f261baa0" />
 
-3. Experimental Results (Sample Outputs Summary)
+###(C). Comparison Table 
 
-<img width="993" height="357" alt="image" src="https://github.com/user-attachments/assets/d52cc296-baac-44d5-bbca-44769df2ffdf" />
+| Scenario              | Prompt Type | Quality                      | Accuracy        | Depth                       |
+| --------------------- | ----------- | ---------------------------- | --------------- | --------------------------- |
+| Creative Story        | Open-ended  | High (creative & expressive) | Medium (varies) | High (detailed ideas)       |
+| Factual Question      | Open-ended  | High (explanatory)           | Medium–High     | High (detailed explanation) |
+| Summarizing Concept   | Open-ended  | High (flexible summary)      | Medium–High     | Medium–High                 |
+| Advice/Recommendation | Open-ended  | High (detailed suggestions)  | Medium–High     | High                        |
 
-4. Evaluation of Responses
-A. Quality
 
-Naïve Prompts: Often produce generic or incomplete answers.
+| Scenario              | Prompt Type  | Quality                        | Accuracy             | Depth      |
+| --------------------- | ------------ | ------------------------------ | -------------------- | ---------- |
+| Creative Story        | Closed-ended | Medium (restricted creativity) | High (follows rules) | Low–Medium |
+| Factual Question      | Closed-ended | High (clear & direct)          | Very High            | Low        |
+| Summarizing Concept   | Closed-ended | Medium (limited format)        | High                 | Low        |
+| Advice/Recommendation | Closed-ended | Medium (fixed responses)       | High                 | Low        |
 
-Basic Prompts: Produce structured, relevant, and polished responses.
+###Summary
 
- Conclusion: Basic prompts significantly improve quality.
+## **1. Overall Structure**
+
+* You followed a **logical flow**: Definition → Scenarios → Outputs → Comparison Table
+* Proper use of headings like (A), (B), (C) improves readability
+
+## **2. Understanding of Prompt Types**
+
+* Open-ended and Closed-ended prompts are **accurately defined**
+* Differences are clearly reflected in examples
+
+## **3. Scenario Design**
+
+* You selected **relevant and diverse scenarios**:
+
+  * Creative Story ✔
+  * Factual Question ✔
+  * Summarizing ✔
+  * Advice ✔
+* Each scenario correctly uses both prompt types
+* 
+## **4. Output Quality**
+
+* Open-ended outputs:
+
+  * More **detailed, creative, and explanatory**
+* Closed-ended outputs:
+
+  * **Short, precise, and controlled**
+* Outputs clearly demonstrate the **difference in prompt behavior**
+  
+## **5. Comparison Table Analysis**
+
+* Table correctly shows:
+
+  * Open-ended → High depth, medium accuracy
+  * Closed-ended → High accuracy, low depth
+* Quality, Accuracy, and Depth are **appropriately evaluated**
  
- B. Accuracy
 
-Naïve Prompts: May miss key details or provide partial information.
+## **6. Strengths**
 
-Basic Prompts: More accurate due to clear instructions.
+✔ Clear definitions and examples
+✔ Good alignment between prompt and output
+✔ Strong comparison logic
+✔ Easy to understand and exam-ready
 
- Conclusion: Accuracy is higher with basic prompts.
+## **7. Minor Improvements (for higher marks)**
 
-C. Depth
+* Add a **short conclusion** summarizing key findings
+* Slightly improve wording consistency (e.g., “a Open-ended” → “an Open-ended”)
+* You can mention:
+  👉 *“Choice of prompt depends on task requirement (creativity vs precision)”
+  
+## **8. Final Evaluation (Rubric Style)**
 
-Naïve Prompts: Shallow explanations.
+| Criteria     | Score (Out of 5) |
+| ------------ | ---------------- |
+| Clarity      | 5                |
+| Relevance    | 5                |
+| Accuracy     | 4.5              |
+| Depth        | 5                |
+| Presentation | 5                |
 
-Basic Prompts: Detailed and comprehensive responses.
+## **Final Conclusion**
 
- Conclusion: Basic prompts provide greater depth.
+Your work clearly shows that:
 
-5. Key Analysis
-Does ChatGPT perform better with basic prompts?
+* **Open-ended prompts** are best for creativity and depth
+* **Closed-ended prompts** are best for accuracy and concise answers
 
-Yes, ChatGPT consistently produces:
+👉 This is a **high-quality, exam-ready answer** with only minor improvements needed.
 
-More relevant answers
-
-Better structured content
-
- More complete explanations
-
-Are there cases where naïve prompts work well?
-
-Yes, in simple tasks such as:
-
--Very basic factual questions
-
--Short answers
-
-Casual or general queries
-
-However, even in these cases, basic prompts still improve clarity.
-
-6. Summary of Findings
-
-   -Prompt clarity directly impacts response quality.
-
-   -Structured prompts guide the AI effectively.
-
-   -Adding constraints (word count, format, examples) improves results.
-
-   -Naïve prompts are suitable only for simple or quick tasks.
-
-7. Best Practices for Writing Effective Prompts
- 
-1.Be specific – Clearly state what you want.
-
-2.Add structure – Mention format (points, paragraph, etc.).
-
-3.Provide context – Give background if needed.
-
-4.Set constraints – Word limit, tone, or examples.
-
-5.Use clear language – Avoid ambiguity.
-
-8. Conclusion
-
-This experiment shows that basic (structured) prompts significantly improve ChatGPT’s performance in terms of quality, accuracy, and depth. While naïve prompts may work for simple tasks, using well-defined prompts is the best approach for achieving precise and meaningful results.
-
-EXPERIENTIAL PERSPECTIVE PROMPT
-
-“Imagine you are a college student managing classes, assignments, and social life. Describe your daily experience and how technology helps you stay organized and productive.”
-
-Answer:
-
-Daily Experience of a College Student Using Technology (Improved Version)
-
-As a college student, I begin my day by checking my smartphone for schedules, reminders, and important updates. Applications like Google Calendar help me stay organized by notifying me about classes, assignments, and meetings. During lectures, I attend online sessions using platforms such as Microsoft Teams or Zoom, which allow effective communication with professors and classmates.
-
-For studying, I use apps like Notion to take notes and manage my learning materials in an organized way. While working on assignments, Google Docs helps me collaborate with others through real-time editing, making group work more efficient. To manage my time wisely, I rely on task management tools like Todoist, which help me prioritize tasks and meet deadlines without stress.
-
-How Technology Improves My Productivity
-
-•  Keeps all tasks and schedules well-organized
-•  Enables easy communication with teachers and friends
-•  Supports efficient learning and collaboration 
-cHelps balance studies and personal life
-
-Conclusion
-
-Overall, technology plays a crucial role in my daily life as a college student. It helps me stay organized, manage time effectively, complete assignments efficiently, and maintain a healthy balance between academics and social life.
-
-EVERYDAY FUNCTIONING PROMPT
-
-“Describe how messaging apps like Instagram  support your social media with others.” 
-
-Answer:
-
-Messaging apps like Instagram play an important role in supporting social interaction by making communication quick, easy, and engaging. Through features such as direct messaging, users can instantly send text messages, photos, videos, and voice notes to friends and family. It also allows group chats, which help people stay connected with multiple friends at the same time. Additionally, features like stories, reels, and posts enable users to share their daily activities and experiences, helping others stay updated and feel connected. The app also provides options like reactions, comments, and video calls, which make communication more interactive and personal. Overall, messaging apps like Instagram help strengthen relationships and maintain social connections, even when people are physically far apart.
-
-•Messaging apps like Instagram enable quick and instant communication with friends, classmates, and family.
-
-•They help in coordinating daily activities such as scheduling meetings, classes, or group discussions.
-
-•Students can easily share study materials, notes, and assignment updates.
-
-•Features like voice messages, images, and video calls make communication more effective and time-saving.
-
-•They help maintain social connections and stay updated with others’ activities throughout the day.
-
-Conclusion
-
-Messaging apps like Instagram play a vital role in supporting daily activities by improving communication, organization, and collaboration. They help students stay connected, manage tasks efficiently, and maintain a balance between academic and social life. Overall, these apps make everyday life more convenient, productive, and connected.
 
 RESULT: 
 
